@@ -34,20 +34,20 @@
 			<nav>
 				<ul>
 				<form id="console" method="post" action="Servlet">
-					<li><a href="#ps4" >PS4</a></li>
-					<li><a href="#news" >PS3</a><li>
-					<li><a href="#news" >PS2</a><li>
-					<li><a href="#news" >XONE</a></li>
-					<li><a href="#news" >Xbox 360</a></li>
-					<li><a href="#news" >Xbox</a><li>
-					<li><a href="#news" >PC</a></li>
-					<li><a href="#news" >Wii</a><li>
-					<li><a href="#news" >Nintendo DS</a><li>
-					<li><a href="#news" >Nintendo 3DS</a><li>
-					<li><a href="#news" >GameCube</a><li>
-					<li><a href="#news" >GBA</a><li>
-					<li><a href="#news" >GameBoy Color</a><li>
-					<li><a href="#news" >N64</a><li>
+					<li><a href="#" id="link1">PS4</a></li>
+                                        <li><a href="#news" id="link2">PS3</a><li>
+                                        <li><a href="#news" id="link3" >PS2</a><li>
+                                        <li><a href="#news" id="link4">XONE</a></li>
+                                        <li><a href="#news" id="link5">Xbox 360</a></li>
+                                        <li><a href="#news" id="link6">Xbox</a><li>
+                                        <li><a href="#news" id="link7">PC</a></li>
+                                        <li><a href="#news" id="link8">Wii</a><li>
+                                        <li><a href="#news" id="link9">Nintendo DS</a><li>
+					<li><a href="#news" id="link10">Nintendo 3DS</a><li>
+					<li><a href="#news" id="link11">GameCube</a><li>
+					<li><a href="#news" id="link12">GBA</a><li>
+					<li><a href="#news" id="link13">GameBoy Color</a><li>
+					<li><a href="#news" id="link14">N64</a><li>
                     <input type="radio" id="button" value="Playstation 4" name="myConsole" />
                     <input type="radio" id="button2" value="Playstation 3" name="myConsole" />
                     <input type="radio" id="button3" value="Playstation 2" name="myConsole" />
@@ -70,22 +70,22 @@
             Select By Genre:
             <ul>
             	<form id="genre" method="post" action="Servlet">
-	                <li><a href="#news" >Action</a></li>
-	                <li><a href="#news" >Action-Adventure</a></li>
-	                <li><a href="#news" >Action Role Playing</a></li>
-	                <li><a href="#news" >Adventure</a></li>
-	                <li><a href="#news" >Episodic</a></li>
-	                <li><a href="#news" >First-Person Shooter</a></li>
-	                <li><a href="#news" >Horror</a></li>
-	                <li><a href="#news" >Maze</a></li>
-	                <li><a href="#news" >Online Multiplayer</a></li>
-	                <li><a href="#news" >Platform</a></li>
-	                <li><a href="#news" >Puzzle-platform</a></li>
-	                <li><a href="#news" >Racing</a></li>
-	                <li><a href="#news" >Role-Playing Game</a></li>
-	                <li><a href="#news" >Sports</a></li>
-	                <li><a href="#news" >Stealth</a></li>
-	                <li><a href="#news" >Tactical role-playing</a></li>
+	               <li><a href="#news" id="link15">Action</a></li>
+	                <li><a href="#news" id="link16">Action-Adventure</a></li>
+	                <li><a href="#news" id="link17">Action Role Playing</a></li>
+	                <li><a href="#news" id="link18">Adventure</a></li>
+	                <li><a href="#news" id="link19">Episodic</a></li>
+	                <li><a href="#news" id="link20">First-Person Shooter</a></li>
+	                <li><a href="#news" id="link21">Horror</a></li>
+	                <li><a href="#news" id="link22">Maze</a></li>
+	                <li><a href="#news" id="link23">Online Multiplayer</a></li>
+	                <li><a href="#news" id="link24">Platform</a></li>
+	                <li><a href="#news" id="link25">Puzzle-platform</a></li>
+	                <li><a href="#news" id="link26">Racing</a></li>
+	                <li><a href="#news" id="link27">Role-Playing Game</a></li>
+	                <li><a href="#news" id="link28">Sports</a></li>
+	                <li><a href="#news" id="link29">Stealth</a></li>
+	                <li><a href="#news" id="link30">Tactical role-playing</a></li>
 	                <input type="radio" id="button15" value="Action" name="myGenre" />
 	                <input type="radio" id="button16" value="Action-Adventure" name="myGenre" />
 	                <input type="radio" id="button17" value="Action Role Playing" name="myGenre" />

@@ -5,6 +5,7 @@
       <title>Games</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
+                <script type = "text/javascript" src="games.js"></script>
 		<link rel="stylesheet" href="pageStyle.css">
 </head>
 
@@ -40,20 +41,20 @@
 		<nav>
 			<ul>
 				<form id="console" method="post" action="Servlet">
-					<li><a href="#ps4" onclick="myFunction()">PS4</a></li>
-					<li><a href="#news" onclick="myFunction2()">PS3</a><li>
-					<li><a href="#news" onclick="myFunction3()">PS2</a><li>
-					<li><a href="#news" onclick="myFunction4()">XONE</a></li>
-					<li><a href="#news" onclick="myFunction5()">Xbox 360</a></li>
-					<li><a href="#news" onclick="myFunction6()">Xbox</a><li>
-					<li><a href="#news" onclick="myFunction7()">PC</a></li>
-					<li><a href="#news" onclick="myFunction8()">Wii</a><li>
-					<li><a href="#news" onclick="myFunction9()">Nintendo DS</a><li>
-					<li><a href="#news" onclick="myFunction10()">Nintendo 3DS</a><li>
-					<li><a href="#news" onclick="myFunction11()">GameCube</a><li>
-					<li><a href="#news" onclick="myFunction12()">GBA</a><li>
-					<li><a href="#news" onclick="myFunction13()">GameBoy Color</a><li>
-					<li><a href="#news" onclick="myFunction14()">N64</a><li>
+					<li><a href="#" id="link1">PS4</a></li>
+                                        <li><a href="#news" id="link2">PS3</a><li>
+                                        <li><a href="#news" id="link3" >PS2</a><li>
+                                        <li><a href="#news" id="link4">XONE</a></li>
+                                        <li><a href="#news" id="link5">Xbox 360</a></li>
+                                        <li><a href="#news" id="link6">Xbox</a><li>
+                                        <li><a href="#news" id="link7">PC</a></li>
+                                        <li><a href="#news" id="link8">Wii</a><li>
+                                        <li><a href="#news" id="link9">Nintendo DS</a><li>
+					<li><a href="#news" id="link10">Nintendo 3DS</a><li>
+					<li><a href="#news" id="link11">GameCube</a><li>
+					<li><a href="#news" id="link12">GBA</a><li>
+					<li><a href="#news" id="link13">GameBoy Color</a><li>
+					<li><a href="#news" id="link14">N64</a><li>
                     <input type="radio" id="button" value="Playstation 4" name="myConsole" />
                     <input type="radio" id="button2" value="Playstation 3" name="myConsole" />
                     <input type="radio" id="button3" value="Playstation 2" name="myConsole" />
@@ -76,22 +77,22 @@
 			Select By Genre:
 			<ul>
 				<form id="genre" method="post" action="Servlet">
-	                <li><a href="#news" onclick="myFunction15()">Action</a></li>
-	                <li><a href="#news" onclick="myFunction16()">Action-Adventure</a></li>
-	                <li><a href="#news" onclick="myFunction17()">Action Role Playing</a></li>
-	                <li><a href="#news" onclick="myFunction18()">Adventure</a></li>
-	                <li><a href="#news" onclick="myFunction19()">Episodic</a></li>
-	                <li><a href="#news" onclick="myFunction20()">First-Person Shooter</a></li>
-	                <li><a href="#news" onclick="myFunction21()">Horror</a></li>
-	                <li><a href="#news" onclick="myFunction22()">Maze</a></li>
-	                <li><a href="#news" onclick="myFunction23()">Online Multiplayer</a></li>
-	                <li><a href="#news" onclick="myFunction24()">Platform</a></li>
-	                <li><a href="#news" onclick="myFunction25()">Puzzle-platform</a></li>
-	                <li><a href="#news" onclick="myFunction26()">Racing</a></li>
-	                <li><a href="#news" onclick="myFunction27()">Role-Playing Game</a></li>
-	                <li><a href="#news" onclick="myFunction28()">Sports</a></li>
-	                <li><a href="#news" onclick="myFunction29()">Stealth</a></li>
-	                <li><a href="#news" onclick="myFunction30()">Tactical role-playing</a></li>
+	                <li><a href="#news" id="link15">Action</a></li>
+	                <li><a href="#news" id="link16">Action-Adventure</a></li>
+	                <li><a href="#news" id="link17">Action Role Playing</a></li>
+	                <li><a href="#news" id="link18">Adventure</a></li>
+	                <li><a href="#news" id="link19">Episodic</a></li>
+	                <li><a href="#news" id="link20">First-Person Shooter</a></li>
+	                <li><a href="#news" id="link21">Horror</a></li>
+	                <li><a href="#news" id="link22">Maze</a></li>
+	                <li><a href="#news" id="link23">Online Multiplayer</a></li>
+	                <li><a href="#news" id="link24">Platform</a></li>
+	                <li><a href="#news" id="link25">Puzzle-platform</a></li>
+	                <li><a href="#news" id="link26">Racing</a></li>
+	                <li><a href="#news" id="link27">Role-Playing Game</a></li>
+	                <li><a href="#news" id="link28">Sports</a></li>
+	                <li><a href="#news" id="link29">Stealth</a></li>
+	                <li><a href="#news" id="link30">Tactical role-playing</a></li>
 	                <input type="radio" id="button15" value="Action" name="myGenre" />
 	                <input type="radio" id="button16" value="Action-Adventure" name="myGenre" />
 	                <input type="radio" id="button17" value="Action Role Playing" name="myGenre" />
@@ -138,11 +139,11 @@
  						${review.getReviewer()} - ${review.getScore()}
  						<br />
  					</#list>
- 					<form id="subReview" method="post" action="Servlet" onsubmit="return mySubmitFunction()">
- 						<textarea id="textA" rows="4" cols="50" name="myReview">
+ 					<form id="subReview" method="post" action="Servlet">
+ 						<textarea id="textA" rows="4" cols="50" name="myReview" required>
  						</textarea>
  						<br />
- 						Score :<input id="myScore" type="number" name="score" min="1" max="10" />/10
+ 						Score :<input id="myScore" type="number" name="score" min="1" max="10" required/>/10
  						<br />
  						<button type="submit" value="${game.getId()}" id="submitReview" name="idForReview">Submit your Review</button>
  					</form>
@@ -151,32 +152,6 @@
 		<footer> 
 		</footer>
 	</div>
-	<script>
-		function mySubmitFunction(){
- 			if($("#textA").val() && !$("#myScore").val()){
- 				alert("Both fields have to filled in!");
- 				return false;
- 			}
- 			else{
- 				return true;
- 			}
- 		}
- 		document.getElementById("submitReview").onclick = function(){
- 		var score = document.getElementById("myScore").value;
- 			if(score > 10 || score < 0){
- 				alert("Score has to be larger than 0 and smaller than 11");
- 			}
- 		}
 
-		var elements = document.getElementsByClassName("block");
-		for(var i=0; i < elements.length; i++){
-			elements[i].disabled=true;
-		}
-		var cart = document.getElementById("button32");
-    	
-    	document.getElementById("purchase").onclick = function(){
-    		document.getElementById("addToCart").submit();
-    	}
-	</script>
 </body>
 </html>

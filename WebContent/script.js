@@ -30,127 +30,130 @@ $(document).ready(function(){
     document.getElementById("button28").style.display = "none";
     document.getElementById("button29").style.display = "none";
     document.getElementById("button30").style.display = "none";
-    document.getElementById("button31").style.display = "none";
+    //document.getElementById("button31").style.display = "none";
     document.getElementById("button32").style.display = "none";
     
-    $("#button").click(function() {
+    $("#link1").click(function(e) {
+        console.log("click handled");
+        e.preventDefault();
         document.getElementById("button").checked=true;
-        document.consoleN.submit();
-        document.getElementById("console").submit();
+        console.log("button clicked");
+        $("#console").submit();
+        console.log("form submitted");
 	});
-    $("#button2").click(function() {
+    $("#link2").click(function() {
         document.getElementById("button2").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button3").click(function() {
+    $("#link3").click(function() {
         document.getElementById("button3").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button4").click(function() {
+    $("#link4").click(function() {
         document.getElementById("button4").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button5").click(function() {
+    $("#link5").click(function() {
         document.getElementById("button5").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button6").click(function() {
+    $("#link6").click(function() {
         document.getElementById("button6").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button7").click(function() {
+    $("#link7").click(function() {
         document.getElementById("button7").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button8").click(function() {
+    $("#link8").click(function() {
         document.getElementById("button8").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button9").click(function() {
+    $("#link9").click(function() {
         document.getElementById("button9").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button10").click(function() {
+    $("#link10").click(function() {
         document.getElementById("button10").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button11").click(function() {
+    $("#link11").click(function() {
         document.getElementById("button11").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button12").click(function() {
+    $("#link12").click(function() {
         document.getElementById("button12").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button13").click(function() {
+    $("#link13").click(function() {
         document.getElementById("button13").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button14").click(function() {
+    $("#link14").click(function() {
         document.getElementById("button14").checked=true;
         document.getElementById("console").submit();
 	});
-    $("#button15").click(function() {
+    $("#link15").click(function() {
         document.getElementById("button15").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button16").click(function() {
+    $("#link16").click(function() {
         document.getElementById("button16").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button17").click(function() {
+    $("#link17").click(function() {
         document.getElementById("button17").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button18").click(function() {
+    $("#link18").click(function() {
         document.getElementById("button18").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button19").click(function() {
+    $("#link19").click(function() {
         document.getElementById("button19").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button20").click(function() {
+    $("#link20").click(function() {
         document.getElementById("button20").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button21").click(function() {
+    $("#link21").click(function() {
         document.getElementById("button21").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button22").click(function() {
+    $("#link22").click(function() {
         document.getElementById("button22").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button23").click(function() {
+    $("#link23").click(function() {
         document.getElementById("button23").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button24").click(function() {
+    $("#link24").click(function() {
         document.getElementById("button24").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button25").click(function() {
+    $("#link25").click(function() {
         document.getElementById("button25").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button26").click(function() {
+    $("#link26").click(function() {
         document.getElementById("button26").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button27").click(function() {
+    $("#link27").click(function() {
         document.getElementById("button27").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button28").click(function() {
+    $("#link28").click(function() {
         document.getElementById("button28").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button29").click(function() {
+    $("#link29").click(function() {
         document.getElementById("button29").checked=true;
         document.getElementById("genre").submit();
 	});
-    $("#button30").click(function() {
+    $("#link30").click(function() {
         document.getElementById("button30").checked=true;
         document.getElementById("genre").submit();
 	});
@@ -159,19 +162,5 @@ $(document).ready(function(){
 		cart.checked=true;
 		document.getElementById("cart").submit();
 	});
-        function mySubmitFunction(){
- 			if($("#textA").val() && !$("#myScore").val()){
- 				alert("Both fields have to filled in!");
- 				return false;
- 			}
- 			else{
- 				return true;
- 			}
- 		}
- 		document.getElementById("submitReview").onclick = function(){
- 		var score = document.getElementById("myScore").value;
- 			if(score > 10 || score < 0){
- 				alert("Score has to be larger than 0 and smaller than 11");
- 			}
- 		}
+
 });
